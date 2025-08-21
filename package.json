@@ -1,13 +1,17 @@
 {
-    "name": "render-api",
+    "name": "postgres-backend",
     "version": "1.0.0",
     "main": "index.js",
+    "type": "commonjs",
     "scripts": {
       "start": "node index.js"
     },
+    "engines": {
+      "node": "18.x"
+    },
     "dependencies": {
-      "express": "^4.18.2",
-      "pg": "^8.11.1"
+      "express": "^4.19.2",
+      "pg": "^8.11.5"
     }
   }
   
