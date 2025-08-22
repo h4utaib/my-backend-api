@@ -16,12 +16,12 @@ app.get("/", (req, res) => {
 });
 
 // GET /users?emirates_id=...&dob=...
-app.get("/users", async (req, res) => {
+app.get("/transactions", async (req, res) => {
   const { emirates_id, dob } = req.query;
 
   try {
     const result = await pool.query(
-      "SELECT * FROM users WHERE emirates_id=$1 AND dob=$2",
+      "SELECT * FROM transactions WHERE emirates_id=$1 AND dob=$2",
       [emirates_id, dob]
     );
 
