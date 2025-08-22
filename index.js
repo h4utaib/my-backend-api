@@ -28,7 +28,7 @@ app.get("/transactions", async (req, res) => {
     if (result.rows.length > 0) {
       res.json({
         status: "success",
-        data: result.rows[0]
+        data: result.rows
       });
     } else {
       res.json({
